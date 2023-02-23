@@ -1,0 +1,80 @@
+*{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+*{border: 0;}
+#titulo{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+#formul{
+    margin-top:5cm;
+    margin-left: 20cm;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid ;
+    border-color: rgb(25, 119, 22);
+    border-radius: 10px;
+
+
+}
+#subtil{
+    padding-top: 10px;
+    color: rgb(13, 121, 19);
+}
+#subtil2{
+    color: white;
+    padding-top: 10px;
+    
+}
+.contenedortitul{
+    display: flex;
+    background-color: black;
+
+}
+#logo{
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    
+}
+body{
+    background-image: url("./imagenes/fondo.png");
+}
+#simbolo{
+    height: 60px;
+    display: flex;
+    margin-left: 230px;
+    margin-top: 10px;
+}
+#texform1{
+    color: rgb(36, 153, 36);
+    margin-left: 225px;
+}
+#texform2{
+    color: rgb(36, 153, 36);
+    margin-left: 205px;
+}
+#dialogo1{
+    background-color: rgba(21, 102, 21, 0.555);
+    width: 10cm;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+#boton{
+    background-color: rgb(28, 133, 54);
+    margin-left: 200px;
+    border-color: rgb(28, 133, 54);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#parrafo1{
+    text-align: center;
+}
+#link{
+    text-decoration: none;
+    color:rgb(50, 161, 40);
+    margin-left: 1040px;
+    position: relative;
+    bottom:  40px;
+}
