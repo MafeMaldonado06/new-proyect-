@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <title>Formulario registro</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./logo.png" alt="Logo  empresarial">
+        <div class="titulo">
+            <h1 class="agro">AGRO</h1>
+            <h1 class="express">EXPRESS</h1>
+        </div>
+    </header>
+
+    <form class="formulario" action="">
+        <div>
+            <input class="nombre" type="text" placeholder="Ingrese su nombre" pattern="[{A-Za-z}]+" minlength="5" required>
+            <input class="apellido" type="text" placeholder="Ingrese su apellido" pattern="[{A-Za-z}]+" minlength="5" required>
+            <input class="correo" type="text" placeholder="Ingrese su correo" pattern="[{A-Za-z}]+" minlength="5" required>
+            <input class="celular" type="text" placeholder="Ingrese su numero de celular" pattern="[{0-9}]+" minlength="5" required>
+            <select class="pais" name="pais" id="">
+                <option value="">Seleccione un país</option>
+                <option value="">Colombia</option>
+                <option value="">Perú</option>
+                <option value="">Argentina</option>
+            </select>
+            <select class="departamento" name="departamento" id="">
+                <option value="">Seleccione un departamento</option>
+                <option value="">Atlantico</option>
+                <option value="">Antioquia</option>
+                <option value="">Arauca</option>
+            </select>
+            <select class="ciudad" name="ciudad" id="">
+                <option value="">Seleccione una ciudad/municipio</option>
+                <option value="">Barranquilla</option>
+                <option value="">Cali</option>
+                <option value="">Bogotá</option>
+            </select>
+            <input class="direccion" type="text" placeholder="Ingrese su dirrecccion" pattern="[{A-Za-z0-9}]+" minlength="5" required>
+            <input class="contraseña" type="text" placeholder="Ingrese una contraseña" pattern="[{A-Za-z0-9}]+" minlength="5" required>
+        </div>
+        
+        <select class="rol" name="rol" id="">
+            <option value="">Seleccione una opcion</option>
+            <option value="">Commprador</option>
+            <option value="">Campesino</option>
+            <option value="">Transportador</option>
+            <option value="">Administrador</option>
+        </select>
+
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <div id="respuesta"></div>
+</body>
+</html>
