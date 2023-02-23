@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/registrarse.css">
+    <title>REGISTRO</title>
+</head>
+<body style="background-image: url(img/fondo.png);">
+  
+    <!-- menu -->
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+           <img id="logo_nav" src="./img/logo.png" alt="logo"> 
+           <img id="agroexpress" src="./img/TIPOGRAFIA2.png" alt="agroexpress">
+        </div>
+    </nav>
+
+    <div>
+        <img id="usua" src="./img/usuario (1).png" alt="">
+    </div>
+
+    <!-- formulario -->
+
+    <div class="cont" style="margin-bottom: 2%;margin-top: 2%;padding:3%;">
+        <form class="container" id="formulario">
+          <div class="row">
+            <div class="col-md-6 mb-3 formulario__grupo" id="grupo__nombre">
+              <label for="nombre" class="formulario__label">NOMBRE</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input " name="nombre" id="nombre" placeholder="Nombre" required>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3 formulario__grupo" id="grupo__apellido">
+              <label for="apellido" class="formulario__label">APELLIDO</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input form-control" name="apellido" id="apellido" placeholder="Apellido" required>
+                </div>
+              <p class="formulario__input-error">Este campo solo puede tener letras.</p>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 mb-3 formulario__grupo input" id="grupo__correo">
+                <label for="email" class="formulario__label">Correo electronico</label>
+                <div class="formulario__grupo-input">
+                  <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo electronico" required>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+              </div>
+              <div class="col-md-3 mb-3 formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Telefono">
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+              </div>
+              <div class="col-md-3 mb-3 formulario__grupo input" id="grupo__direccion">
+                <label for="direccion" class="formulario__label">Direccion</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Direccion" required>
+                </div>
+                <p class="formulario__input-error">La dirección solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-6 mb-3 formulario__grupo input" id="grupo_departamento">
+              <label for="departamento" class="formulario__label">Departamento</label>
+              <div class="formulario__grupo-input">
+                <select for="departamento" name="departamento" class="form-control" required>
+                  <option value="0">...</option>
+                  <option value="1">1. Amazonas</option>
+                  <option value="2">2. Antioquia</option>
+                  <option value="3">3. Arauca</option>
+                  <option value="4">4. Atlantico</option>
+                  <option value="5">5. Bogota</option>
+                  <option value="6">6. Bolivar</option>
+                  <option value="7">7. Boyaca</option>
+                  <option value="8">8. Caldas</option>
+                  <option value="9">9. Caqueta</option>
+                  <option value="10">10. Casanara</option>
+                  <option value="11">11. Cauca</option>
+                  <option value="12">12. Cesar</option>
+                  <option value="13">13. Choco</option>
+                  <option value="14">14. Cordoba</option>
+                  <option value="15">15. Cundinamarca</option>
+                  <option value="16">16. Guainia</option>
+                  <option value="17">17. Guaviare</option>
+                  <option value="18">18. Huila</option>
+                  <option value="19">19. La guajira</option>
+                  <option value="20">20. Magdalena</option>
+                  <option value="21">21. Meta</option>
+                  <option value="22">22. Nariño</option>
+                  <option value="23">23. Norte de santander</option>
+                  <option value="24">24. Putumayo</option>
+                  <option value="25">25. Quindio</option>
+                  <option value="26">26. Risaralda</option>
+                  <option value="27">27. San andres y providencia</option>
+                  <option value="28">28. Santander</option>
+                  <option value="29">29. Sucre</option>
+                  <option value="30">30. Tolima</option>
+                  <option value="31">31. Valle del cauca</option>
+                  <option value="32">32. Vaupes</option>
+  
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3 formulario__grupo input" id="grupo_departamento">
+              <label for="municipio" class="formulario__label">Municipio</label>
+              <div class="formulario__grupo-input">
+              <select for="municipio" name="municipio" class="form-control" required>
+                <option value="0">...</option>
+                <option value="1">1. Chocontá</option>
+                <option value="2">2. Machetá</option>
+                <option value="3">3. Manta</option>
+                <option value="4">4. Sesquilé</option>
+                <option value="5">5. Suesca</option>
+                <option value="6">6. Tibirita</option>
+                <option value="7">7. Villapinzón</option>
+                <option value="8">8. Agua de Dios</option>
+                <option value="9">9. Girardot</option>
+                <option value="10">10. Nariño</option>
+                <option value="11">11. La Vega</option>
+                <option value="12">12. Villeta</option>
+                <option value="13">13. Guasca</option>
+                <option value="14">14. Bojacá</option>
+                <option value="15">15. Facatativá</option>
+                <option value="16">16. Funza</option>
+                <option value="17">17. Madrid</option>
+                <option value="18">18. Mosquera</option>
+                <option value="19">19. Subachoque</option>
+                <option value="20">20. Zipacón</option>
+              </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-12 formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label text-center">
+              <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+              Acepto los Terminos y Condiciones
+            </label>
+          </div>
+          <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+          </div>
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button  id="boton_inicio" type="submit" class="formulario__btn btn btn-success btn-md" style="border: #81D959 solid 2px; background-color: #387c2d; color: #ffff;padding: 2px; margin:3px;">ENVIADO</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+          </div>
+  
+        </form>
+      </div>
+    
+
+</body>
+</html>
