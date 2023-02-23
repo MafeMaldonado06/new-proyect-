@@ -1,0 +1,46 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    /*font-size: 100%;
+    font-weight: normal;*/
+}
+#nav{
+    padding-left: 2%;
+}
+#logo_nav{
+    height: 100px;
+    width: 100dp;
+    margin-left: 50xp;
+}
+#agroexpress{
+    height: 50px;
+    width: auto;
+    position: absolute;
+    padding-left: 5%;
+}
+#usua{
+    margin-top: 2%;
+    display:flex;
+    justify-content: center;
+    align-items: center;margin-left: 50%;
+}
+.cont{
+    background-color: whitesmoke;
+    margin: 20%;
+    border-radius: 3%;
+    border: 3px solid #457317;
+}
+label{
+    color: #457317;
+    font-size: 200XP;
+    font-weight: bold; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    background-color: #50722e6b;
+    border: none;
+    width: 100%;
+    padding: 20xp;
+}
